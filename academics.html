@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notenomad - Academics</title>
+    <link rel="icon" href="./icon.png" type="icon/x-image">
+    <link rel="stylesheet" href="academics.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Protest+Riot&family=Russo+One&display=swap" rel="stylesheet">
+    <script src="academics.js"></script>
+    <style>
+    @font-face {
+        font-family: "canva-sans";
+        src: url("Sans/Sans.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "agrandir";
+        src: url("Agrandir/Agrandir-GrandLight.otf") format("opentype");
+    }
+    body{
+        margin:0px;
+        border:none;
+        padding:none;
+        overflow-x: hidden;
+        width:100vw;
+        height:100vh;
+        background-image: url(page1.jpg);
+        background-size:cover;
+        /* display:flex;
+        justify-content:center; */
+    }
+    #navbar-below{
+        top:72px;
+        margin-left:-80%;
+        z-index:2;
+        height:3px;
+        width:30%;
+        position:fixed;
+        background: linear-gradient(to right, rgba(255, 165, 0, 1), rgba(255, 165, 0, 0));
+    }
+    #page1-navbar-text{
+        font-size: 35px;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 0%, rgba(166,143,143,1) 10%, rgb(132, 42, 42) 45%, rgb(255, 0, 0) 86%, rgba(57,26,46,1) 255%);
+        display:inline;
+        background-clip: text;
+        color: transparent;
+        font-family:"Russo One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        position:relative;
+        left:20%;
+    }
+    .navbar-home{
+        background-image:url(home.png);
+        background-size:cover;
+        height:40px;
+        width:110px;
+        cursor:pointer;
+    }
+    .navbar-elements-group{
+        display:flex;
+        align-items:center;
+        justify-content:space-around;
+        width:70%;
+    }
+    #page1-navbar{
+        position: fixed;
+        display:flex;
+        width:90%;
+        align-items:center;
+        padding:10px 0px 10px 0px;
+        /* justify-content:space-around; */
+        height:60px;
+        background-color:#000000;
+        z-index:1;
+        width:100%;
+        padding:20px 20px 0px 20px;
+        top:-1%;
+    }
+    .acads-button-link{
+        text-decoration:none;
+    }
+    .navbar-elements{
+        font-family: "agrandir", sans-serif;
+        font-size:17px;
+        color:#b2b2b1;
+        cursor:pointer;
+        background-color:#000;
+        border:none;
+    }
+    #acads{
+        width:90%;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        margin-bottom:10%;
+        margin-top:10%;
+        margin-left:5%;
+    }
+    #acads-buttons{
+        width:45%;
+    }
+    .acads-dropdown{
+        background-color:rgb(0,0,0,0.5);
+        color:#b2b2b1;
+        font-family:"Russo One", sans-serif;
+        padding:0px 30px 0px 30px;
+        width:100%;
+        height:70px;
+        display:flex;
+        font-size:25px;
+        font-weight:300;
+        justify-content:space-between;
+        border:none;
+        margin-bottom:10px;
+        border-radius:30px;
+        align-items:center;
+        cursor:pointer;
+        transition: box-shadow 0.08s ease;
+    }
+    .acads-dropdown:hover{
+        box-shadow: 0px 0px 7px rgba(255, 255, 255,0.8);
+    }
+    #acads-book{
+        background-image:url(book.png);
+        background-size:cover;
+        height:470px;
+        width:500px;
+    }
+    #footer{
+        width:100vw;
+    }
+    #footer-heading{
+        background-color:#000;
+        color:#fff;
+        font-family: "agrandir", sans-serif;
+        font-size:10px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        padding:5px 0px 5px 0px;
+        text-decoration: none;
+    }
+    #footer-body{
+        display:flex;
+        justify-content:space-around;
+        padding:30px 50px 30px 50px;
+        background-color:#181717;
+        color:#fff;
+        font-family: "agrandir", sans-serif;
+        font-size:13px;
+    }
+    .footer-heading{
+        font-family: "agrandir", sans-serif;
+        font-size:20px;
+        color:#fff;
+        font-weight:600;
+        margin-bottom:10px;
+    }
+    .footer-subheading{
+        font-family: "agrandir", sans-serif;
+        font-size:15px;
+        color:#fff;
+    }
+    .footer-text{
+        font-family: "agrandir", sans-serif;
+        font-size:13px;
+        color:#fff;
+    }
+    .credit-text{
+        font-family: "agrandir", sans-serif;
+        font-size:13px;
+        color:#fff;
+        text-decoration:none;
+    }
+    #ecell-logo{
+        background-image:url(ecell-logo.png);
+        background-size:cover;
+        height:50px;
+        width:50px;
+    }
+    #cna-logo{
+        background-image:url(cna-logo.png);
+        background-size:cover;
+        height:50px;
+        width:50px;
+    }
+    #fec-logo{
+        background-image:url(fec-logo.png);
+        background-size:cover;
+        height:50px;
+        width:50px;
+    }
+    .credit-box{
+        display:flex;
+        align-items:center;
+        justify-content:space-around;
+    }
+    #footer-body-right-heading2{
+        margin-top:50px;
+    }
+
+    </style>
+</head>
+<body>
+    <div id="page1-navbar">
+        <a href="http://localhost:5000" target="_blank">
+            <div id="page1-navbar-home" class="navbar-home"></div>
+        </a>
+        <div id="page1-navbar-text">Welcome To academics!</div>
+    </div>
+    <div id="navbar-below"></div>
+    <div id="acads">
+        <div id="acads-buttons">
+            <a href="" target="_blank" class="acads-button-link">
+                <button class="acads-dropdown">
+                    <div class="acads-dropdown-text">Semester 1</div>
+                    <span class="material-symbols-outlined">
+                        north_east
+                    </span>
+                </button>
+            </a>
+            <a href="" target="_blank" class="acads-button-link">
+                <button class="acads-dropdown">
+                    <div class="acads-dropdown-text">Semester 2</div>
+                    <span class="material-symbols-outlined">
+                        north_east
+                    </span>
+                </button>
+            </a>
+            <a href="" target="_blank" class="acads-button-link">
+                <button class="acads-dropdown">
+                    <div class="acads-dropdown-text">Semester 3</div>
+                    <span class="material-symbols-outlined">
+                        north_east
+                    </span>
+                </button>
+            </a>
+            <a href="" target="_blank" class="acads-button-link">
+                <button class="acads-dropdown">
+                    <div class="acads-dropdown-text">Semester 4</div>
+                    <span class="material-symbols-outlined">
+                        north_east
+                    </span>
+                </button>
+            </a>
+        </div>
+        <div id="acads-book"></div>
+    </div>
+    <div id="footer">
+        <a href="https://www.instagram.com/ace_iitg/" target="_blank" id="footer-heading">© Accosiation Of Civil Engineers (ACE), I I T Guwahati</a>
+        <div id="footer-body">
+            <div id="footer-body-left">
+                <div id="footer-body-left-heading" class="footer-heading">Credits</div>
+                <div class="credit-element">
+                    <div id="credit-element-heading" class="footer-subheading">Product matters 3.0</div>
+                    <div class="credit-box" id="ecell-box">
+                        <a href="https://www.instagram.com/ecell_iitg/?hl=en" target="_blank">
+                            <div class="credit-logo" id="ecell-logo"></div>
+                        </a>
+                        <a class="credit-text" target="_blank" id="ecell-text" href="https://www.instagram.com/ecell_iitg/?hl=en" class="footer-text">@ecell_iitg</a>
+                    </div>
+                </div>
+                <div class="credit-element">
+                    <div id="credit-element-heading" class="footer-subheading">Winter Consulting</div>
+                    <div class="credit-box" id="cna-box">
+                        <a href="https://www.instagram.com/caciitg/?hl=en" target="_blank">
+                            <div class="credit-logo" id="cna-logo"></div>
+                        </a>
+                        <a class="credit-text" target="_blank" id="cna-text" href="https://www.instagram.com/caciitg/?hl=en" class="footer-text">@caciitg</a>
+                    </div>
+                </div>
+                <div class="credit-element">
+                    <div id="credit-element-heading" class="footer-subheading">Blockchain & Web 3.0</div>
+                    <div class="credit-box" id="fec-box">
+                        <a href="https://www.instagram.com/fec_iitg/?hl=en" target="_blank">
+                            <div class="credit-logo" id="fec-logo"></div>
+                        </a>
+                        <a class="credit-text" target="_blank" id="fec-text" href="https://www.instagram.com/fec_iitg/?hl=en" class="footer-text">@fec_iitg</a>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-body-right">
+                <div id="footer-body-right-heading" class="footer-heading">For any queries or feedback</div>
+                <div id="footer-body-right-text" class="footer-text">Divyansh Mishra<br>m.divyansh@iitg.ac.in</div>
+                <div id="footer-body-right-heading2" class="footer-subheading">This website is made with significant contributions by :</div>
+                <div id="footer-body-right-text2" class="footer-text">Samiksha Mitra, Kapil Kumar & Avinash Raj</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

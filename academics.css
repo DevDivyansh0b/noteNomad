@@ -1,0 +1,191 @@
+@font-face {
+    font-family: "canva-sans";
+    src: url("./Sans/Sans.ttf") format("truetype");
+  }
+@font-face {
+    font-family: "agrandir";
+    src: url("./Agrandir/Agrandir-GrandLight.otf") format("opentype");
+  }
+body{
+    margin:0px;
+    border:none;
+    padding:none;
+    overflow-x: hidden;
+    width:100vw;
+    height:100vh;
+    background-image: url(page1.jpg);
+    background-size:cover;
+    /* display:flex;
+    justify-content:center; */
+}
+#navbar-below{
+    top:72px;
+    margin-left:-80%;
+    z-index:2;
+    height:3px;
+    width:30%;
+    position:fixed;
+    background: linear-gradient(to right, rgba(255, 165, 0, 1), rgba(255, 165, 0, 0));
+}
+#page1-navbar-text{
+    font-size: 35px;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 0%, rgba(166,143,143,1) 10%, rgb(132, 42, 42) 45%, rgb(255, 0, 0) 86%, rgba(57,26,46,1) 255%);
+    display:inline;
+    background-clip: text;
+    color: transparent;
+    font-family:"Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position:relative;
+    left:20%;
+}
+.navbar-home{
+    background-image:url(home.png);
+    background-size:cover;
+    height:40px;
+    width:110px;
+    cursor:pointer;
+}
+.navbar-elements-group{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    width:70%;
+}
+#page1-navbar{
+    position: fixed;
+    display:flex;
+    width:90%;
+    align-items:center;
+    padding:10px 0px 10px 0px;
+    /* justify-content:space-around; */
+    height:60px;
+    background-color:#000000;
+    z-index:1;
+    width:100%;
+    padding:20px 20px 0px 20px;
+    top:-1%;
+}
+.acads-button-link{
+    text-decoration:none;
+}
+.navbar-elements{
+    font-family: "agrandir", sans-serif;
+    font-size:17px;
+    color:#b2b2b1;
+    cursor:pointer;
+    background-color:#000;
+    border:none;
+}
+#acads{
+    width:90%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:10%;
+    margin-top:10%;
+    margin-left:5%;
+}
+#acads-buttons{
+    width:45%;
+}
+.acads-dropdown{
+    background-color:rgb(0,0,0,0.5);
+    color:#b2b2b1;
+    font-family:"Russo One", sans-serif;
+    padding:0px 30px 0px 30px;
+    width:100%;
+    height:70px;
+    display:flex;
+    font-size:25px;
+    font-weight:300;
+    justify-content:space-between;
+    border:none;
+    margin-bottom:10px;
+    border-radius:30px;
+    align-items:center;
+    cursor:pointer;
+    transition: box-shadow 0.08s ease;
+}
+.acads-dropdown:hover{
+    box-shadow: 0px 0px 7px rgba(255, 255, 255,0.8);
+}
+#acads-book{
+    background-image:url(book.png);
+    background-size:cover;
+    height:470px;
+    width:500px;
+}
+#footer{
+    width:100vw;
+}
+#footer-heading{
+    background-color:#000;
+    color:#fff;
+    font-family: "agrandir", sans-serif;
+    font-size:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:5px 0px 5px 0px;
+    text-decoration: none;
+}
+#footer-body{
+    display:flex;
+    justify-content:space-around;
+    padding:30px 50px 30px 50px;
+    background-color:#181717;
+    color:#fff;
+    font-family: "agrandir", sans-serif;
+    font-size:13px;
+}
+.footer-heading{
+    font-family: "agrandir", sans-serif;
+    font-size:20px;
+    color:#fff;
+    font-weight:600;
+    margin-bottom:10px;
+}
+.footer-subheading{
+    font-family: "agrandir", sans-serif;
+    font-size:15px;
+    color:#fff;
+}
+.footer-text{
+    font-family: "agrandir", sans-serif;
+    font-size:13px;
+    color:#fff;
+}
+.credit-text{
+    font-family: "agrandir", sans-serif;
+    font-size:13px;
+    color:#fff;
+    text-decoration:none;
+}
+#ecell-logo{
+    background-image:url(ecell-logo.png);
+    background-size:cover;
+    height:50px;
+    width:50px;
+}
+#cna-logo{
+    background-image:url(cna-logo.png);
+    background-size:cover;
+    height:50px;
+    width:50px;
+}
+#fec-logo{
+    background-image:url(fec-logo.png);
+    background-size:cover;
+    height:50px;
+    width:50px;
+}
+.credit-box{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+}
+#footer-body-right-heading2{
+    margin-top:50px;
+}
